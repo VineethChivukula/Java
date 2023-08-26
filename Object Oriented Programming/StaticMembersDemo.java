@@ -1,4 +1,4 @@
-class MyClass {
+class StaticMembers {
     // Static variable (class variable)
     static int staticVar = 10;
 
@@ -28,12 +28,12 @@ public class StaticMembersDemo {
     public static void main(String[] args) {
         // Accessing static members
         System.out.println("Accessing static members:");
-        System.out.println("Static variable: " + MyClass.staticVar);
-        MyClass.staticMethod();
+        System.out.println("Static variable: " + StaticMembers.staticVar);
+        StaticMembers.staticMethod();
 
         // Creating objects
-        MyClass obj1 = new MyClass();
-        MyClass obj2 = new MyClass();
+        StaticMembers obj1 = new StaticMembers();
+        StaticMembers obj2 = new StaticMembers();
 
         // Modifying instance variables
         obj1.instanceVar = 5;
@@ -46,8 +46,8 @@ public class StaticMembersDemo {
 
         // Static members can be accessed using the class name
         System.out.println("\nAccessing static members via class name:");
-        System.out.println("Static variable: " + MyClass.staticVar);
-        MyClass.staticMethod();
+        System.out.println("Static variable: " + StaticMembers.staticVar);
+        StaticMembers.staticMethod();
 
         // Static members can also be accessed using an object reference, but it's not recommended
         // System.out.println("\nAccessing static members via object reference (not recommended):");
