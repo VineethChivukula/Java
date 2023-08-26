@@ -10,12 +10,24 @@ class Dog extends Animal {
     void bark() {
         System.out.println("Dog barks");
     }
+
+    // Constructor that calls the superclass constructor using super()
+    Dog() {
+        super(); // Calls the constructor of the superclass (Animal)
+        System.out.println("Dog object created");
+    }
 }
 
 // Multilevel Inheritance: Class Puppy inherits from class Dog
 class Puppy extends Dog {
     void play() {
         System.out.println("Puppy plays");
+    }
+
+    // Constructor that calls the superclass constructor using super()
+    Puppy() {
+        super(); // Calls the constructor of the superclass (Dog)
+        System.out.println("Puppy object created");
     }
 }
 
@@ -34,6 +46,12 @@ class Cat extends Animal implements Sound {
     public void makeSound() {
         System.out.println("Cat meows");
     }
+
+    // Constructor that calls the superclass constructor using super()
+    Cat() {
+        super(); // Calls the constructor of the superclass (Animal)
+        System.out.println("Cat object created");
+    }
 }
 
 // Hierarchical Inheritance: Classes Lion and Tiger inherit from class Animal
@@ -41,11 +59,23 @@ class Lion extends Animal {
     void roar() {
         System.out.println("Lion roars");
     }
+
+    // Constructor that calls the superclass constructor using super()
+    Lion() {
+        super(); // Calls the constructor of the superclass (Animal)
+        System.out.println("Lion object created");
+    }
 }
 
 class Tiger extends Animal {
     void growl() {
         System.out.println("Tiger growls");
+    }
+
+    // Constructor that calls the superclass constructor using super()
+    Tiger() {
+        super(); // Calls the constructor of the superclass (Animal)
+        System.out.println("Tiger object created");
     }
 }
 
@@ -63,6 +93,12 @@ class Dolphin extends Animal implements Swim {
     @Override
     public void swim() {
         System.out.println("Dolphin swims");
+    }
+
+    // Constructor that calls the superclass constructor using super()
+    Dolphin() {
+        super(); // Calls the constructor of the superclass (Animal)
+        System.out.println("Dolphin object created");
     }
 }
 
