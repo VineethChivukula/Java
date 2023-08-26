@@ -32,6 +32,6 @@ public class BigIntegerDemo {
 
         // BigInteger power operation
         BigInteger powerResult = bigInt1.pow(5);
-        System.out.println("BigInteger  raised to the power of 5: " + powerResult);
+        System.out.println("BigInteger 1 raised to the power of 5: " + powerResult);
     }
 }
