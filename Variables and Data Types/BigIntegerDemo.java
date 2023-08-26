@@ -27,7 +27,7 @@ public class BigIntegerDemo {
         } else if (comparison < 0) {
             System.out.println("BigInteger 1 is less than BigInteger 2");
         } else {
-            System.out.println("BigInteger 1 is greater than BigInteger 2");
+            System.out.println("BigInteger 2 is greater than BigInteger 2");
         }
 
         // BigInteger power operation
