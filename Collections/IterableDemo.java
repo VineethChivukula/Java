@@ -23,9 +23,13 @@ public class IterableDemo {
         }
 
         // Using the for-each loop with Iterable
-        System.out.println("Using for-each loop:");
+        System.out.println("\nUsing for-each loop:");
         for (String fruit : iterable) {
             System.out.println(fruit);
         }
+
+        // Using the forEach method introduced in Java 8
+        System.out.println("\nUsing forEach method (Java 8+):");
+        iterable.forEach(fruit -> System.out.println(fruit));
     }
 }
