@@ -1,7 +1,5 @@
-
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 // Functional interface with a single abstract method
 interface MathOperation {
@@ -52,12 +50,5 @@ public class LambdaExpressionDemo {
         System.out.println("Using forEach with a List:");
         List<String> languages = Arrays.asList("Java", "Python", "C++", "JavaScript");
         languages.forEach(language -> System.out.println(language));
-
-        // 8. Lambda expression using Stream API
-        System.out.println("Using Stream API:");
-        List<String> filteredLanguages = languages.stream()
-                .filter(language -> language.length() > 4)
-                .collect(Collectors.toList());
-        filteredLanguages.forEach(language -> System.out.println(language));
     }
 }
